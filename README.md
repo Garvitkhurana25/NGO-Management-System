@@ -42,8 +42,6 @@ python -m venv .venv
 # source .venv/bin/activate     # macOS / Linux
 pip install -r requirements.txt
 
-# 2. Configure secrets (dev defaults work — SQLite, DEBUG=True)
-cp .env.example .env
 
 # 3. Database + admin user
 python manage.py migrate
