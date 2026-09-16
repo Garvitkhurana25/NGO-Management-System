@@ -98,7 +98,6 @@ gitignored `.env`, never in code or the template file.
 ngo_platform/
 ├── manage.py
 ├── requirements.txt
-├── .env.example                 # documented config template
 ├── ngo_platform/                # project config (settings, urls, wsgi/asgi)
 ├── apps/
 │   ├── core/                    # donor, campaign, donation, volunteer, event,
@@ -167,5 +166,4 @@ Full reference in `.env.example`. Key ones:
 ## Project status
 
 Complete and demo-ready: **45/45** feature tasks done, **29** end-to-end tests
-passing, live data running on Supabase (PostgreSQL). Co-authored by Claude Code
-(Anthropic).
+passing, live data running on Supabase (PostgreSQL).
