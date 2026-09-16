@@ -1,0 +1,20 @@
+# Core runtime
+# Django >= 5.2.8 is the first release to support Python 3.14 (the interpreter
+# this venv uses). Earlier lines (incl. 4.2) crash on every template render
+# with "'super' object has no attribute 'dicts'" — a known py3.14 incompat.
+Django>=5.2.8,<6.0
+razorpay>=1.3.3
+
+# Environment config
+python-dotenv>=1.0
+
+# PostgreSQL driver (needed only when pointing at Supabase / managed Postgres)
+psycopg[binary]>=3.2.4
+
+# Production WSGI server (optional in dev)
+gunicorn>=21.0.0; platform_system != "Windows"
+waitress>=3.0.0; platform_system == "Windows"
+
+# Scheduled jobs (recommended production upgrade — see README)
+# celery>=5.3
+# redis>=5.0
